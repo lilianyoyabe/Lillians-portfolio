@@ -299,15 +299,14 @@ form{
     right: 0;
     width: 55px;
     height: 40px;
+    opacity: 0;
   }
 
 .menu-button-checkbox:checked ~ .menu {
     display: block;
   }
 
-
-
-  .menu {
+.menu {
     display: none;
     margin-top: 0;
     padding-left: 0;
@@ -316,10 +315,10 @@ form{
     top: 40px;
     width: 150px;
     height: 100%;
-    background: red;
+    background: rgba(0, 0, 255, 0);
   }
 
-  .menu li {
+.menu li {
     border: 0;
     border-radius: 0;
   }

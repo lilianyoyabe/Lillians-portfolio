@@ -71,7 +71,7 @@ li:hover a {
 #about h1 {
   text-align: center;
   color: #000000;
-  font-size: 100px;
+  font-size: 50px;
   background-color: #666666;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -268,58 +268,6 @@ form{
 */
 
 
-/*讓漢堡在電腦版中隱藏*/
-
-@media screen and (min-width: 1350px) {
-  .menu-button {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1350px) {
-  .container {
-    width: auto;
-  }
-
-/*讓漢堡調整*/
-.menu-button {
-    float: right;
-    font-size: 25px;
-    line-height: 40px;
-    color: white;
-    background: transparent;
-    padding: 0 15px;
-    border: 0;
-  }
-
-
-.menu-button-checkbox {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 55px;
-    height: 40px;
-  }
-
-.menu-button-checkbox:checked ~ .menu {
-    display: block;
-  }
 
 
 
-  .menu {
-    display: none;
-    margin-top: 0;
-    padding-left: 0;
-    position: fixed;
-    right: 0;
-    top: 40px;
-    width: 150px;
-    height: 100%;
-    background: red;
-  }
-
-  .menu li {
-    border: 0;
-    border-radius: 0;
-  }

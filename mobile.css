@@ -48,10 +48,15 @@ li:hover a {
 
 /*以下為自我介紹*/
 
-#my-info{
-  margin-top: 75px;
-  padding: 300px 0px; 
+.container{
+  
 
+}
+
+#my-info{
+ margin-top: 10px;
+ padding: 30% 0%;
+ padding-bottom: 80px;
 
 }
 
@@ -63,28 +68,30 @@ li:hover a {
   background-repeat:no-repeat;
   /* 固定背景圖片位置 */
   background-attachment:fixed;
-  background-size:100%;
+  background-size:100% auto;
   display: block;
   background-position: top,center;
+  margin: 0px 0px;
 }
 
 #about h1 {
   text-align: center;
   color: #000000;
-  font-size: 100px;
+  font-size: 30px;
   background-color: #666666;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
   text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-  margin-bottom:  20px;
+  margin-bottom:  10px;
+  margin-top: 0px;
 }
 
 #about p{
   text-align: center;
   color: #000000;
-  font-size: 20px;
+  font-size: 10px;
   background-color: #666666;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -100,7 +107,7 @@ li:hover a {
 #my-work{
   background-color: #FEDFE1;
   background-position: 20% center;
-  padding: 200px 0px; 
+  padding: 10px 0px; 
 
 }
 
@@ -109,27 +116,27 @@ li:hover a {
   margin: 0px;
   padding-top: 30px;
   color: #FFFFFF;
-  font-size: 50px;
+  font-size: 30px;
   text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 
 
 #my-work-gallery {
     text-align: center;
-    padding: 30px;
+    padding: 0px;
 }
 
 .item {
   position: relative;
-  max-width: 20%;
-  display: inline-block;
-  margin:10px;
+  max-width: 60%;
+  display: block;
+  margin:10px auto;
 
 }
 
 
 .item img{
-  border: 10px solid #FFCCCC; /*看box用*/
+  border: 10px solid #FFCCCC;
   width: 100%;
 
 }
@@ -144,8 +151,8 @@ li:hover a {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 25px 10px;
-
+  padding: 100px 10px;
+  font-size: 20px;
 }
 
 .item-info:hover {
@@ -154,14 +161,15 @@ li:hover a {
 
 /*以下為聯絡資訊*/
 #contact-me{
-  padding: 100px 0px 400px 0px; 
+  padding: 0px 0px 100px 0px; 
   /* 設定背景圖片 */
-  background-image:url("https://i.imgur.com/Dp32BNG.png");
+  background-image:url("https://i.imgur.com/IV2Eoss.jpg");
   /* 讓圖片不重覆排列 */
   background-repeat:no-repeat;
   /* 固定背景圖片位置 */
   background-attachment:fixed;
   background-size:100%;
+  background-position: bottom,center;
  
 }
 
@@ -169,8 +177,8 @@ li:hover a {
   text-align: center;
   margin: 0px;
   padding-top: 30px;
-  color: #FFFFFF;
-  font-size: 50px;
+  color: #FF8888;
+  font-size: 30px;
   text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 
 }
@@ -189,7 +197,7 @@ form{
   margin:0px 50px 15px 50px;
   color: #FFFFFF;
   padding-top: 30px;
-  font-size: 40px;
+  font-size: 10px;
 }
 
 
@@ -197,7 +205,7 @@ form{
   border-radius: 3px;
   width: 100%;
   border: 1px solid #D6D9DC;
-  padding: 10px;
+  padding: 5px;
   margin: 10px 0px;
 }
 
@@ -231,7 +239,7 @@ form{
   -moz-border-radius: 8;
   border-radius: 8px;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 10px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 
@@ -266,60 +274,3 @@ form{
 }
 
 */
-
-
-/*讓漢堡在電腦版中隱藏*/
-
-@media screen and (min-width: 1350px) {
-  .menu-button {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1350px) {
-  .container {
-    width: auto;
-  }
-
-/*讓漢堡調整*/
-.menu-button {
-    float: right;
-    font-size: 25px;
-    line-height: 40px;
-    color: white;
-    background: transparent;
-    padding: 0 15px;
-    border: 0;
-  }
-
-
-.menu-button-checkbox {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 55px;
-    height: 40px;
-  }
-
-.menu-button-checkbox:checked ~ .menu {
-    display: block;
-  }
-
-
-
-  .menu {
-    display: none;
-    margin-top: 0;
-    padding-left: 0;
-    position: fixed;
-    right: 0;
-    top: 40px;
-    width: 150px;
-    height: 100%;
-    background: red;
-  }
-
-  .menu li {
-    border: 0;
-    border-radius: 0;
-  }

@@ -1,10 +1,17 @@
 /*1009更新v1.0*/
 /*1010更新rwd設定*/
+/*1011更新小bug（南港AC討論會）
+1.解決邊框有白條的問題：利用CSS reset
+2.解決背景圖在手機上無法fixed住的問題：不要利用backgroud-attachment，會有不支援問題，
+要先查瀏覽器有沒有支援，背景圖利用Z-index把它當一張圖加進去比較恰當，
+因為把背景圖當一張正常的圖，background-position等也不能用了，要設定它是離邊界多遠
+*/
 
 * {
   /*使用border-box讓Margin和padding都是長寬內含的*/
   box-sizing: border-box;
   font-family:Fugaz One;;
+  margin:0px;
 }
 /*以下為上方選單*/
 #nav{
